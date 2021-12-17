@@ -1,0 +1,558 @@
+:root {
+    /** sunny side **/
+    --blue-background: #C2E9F6;
+    --blue-border: #72cce3;
+    --blue-color: #96dcee;
+    --yellow-background: #fffaa8;
+    --yellow-border: #f5eb71;
+    /** dark side **/
+    --indigo-background: #808fc7;
+    --indigo-border: #5d6baa;
+    --indigo-color: #6b7abb;
+    --gray-border: #e8e8ea;
+    --gray-dots: #e8e8ea;
+    /** general **/
+    --white: #fff;
+  }
+  
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    margin-left: 6%;
+    margin-right:6%;
+    margin-top: 1.5rem;
+}
+.header{
+    display: flex;
+}
+.header > img{
+    width: 32px;
+    height: 32px;
+}
+.header-flex{
+    display: flex;
+    position: absolute;
+    right: 5rem;
+    
+}
+.header-flex > .secondry{  
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    }
+.header-flex >a > button{
+    width: 10rem;
+    height: 3rem;
+    background-color: #4346DE;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+main{
+    margin-top: 10%;
+}
+.main-flex{
+    display: flex;
+}
+.main-body{
+    width: 50%;
+}
+.main-body-head{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+.main-body > p{
+    font-size: 20px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: #182334;
+   width: 90%;
+   line-height: 30px;
+}
+.main-body > a > button{
+ width: 10rem;
+ height: 3rem;   
+ background-color: #4346DE;
+ color: #fff;
+ text-transform: uppercase;
+ font-weight: bold;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ cursor: pointer;
+ outline: none;
+ border: none;
+}
+.main-flex > .card{
+    width: 45%;
+    height: 50vh;
+    box-shadow: 24px 48px 88px rgb(24, 35, 52, 32%);
+    transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotateZ(7deg) scaleY(0.9) scaleX(0.95) translateX(-3%) translateY(-3%);
+    background-color: unset;
+}
+.main-flex > .card:hover{
+    transform: none;
+    transition: all .5s ease-in-out;
+}
+
+#card__items {
+    width: 100%;
+    margin: 28% auto 15% auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+  
+  .card__item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+  }
+  .card__item img {
+    width: 20%;
+    border-radius: 2.5rem;
+    background:url('/images/coupon-bg.jpg') center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+  }
+  .card__item > div{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      color: #000;
+      font-weight: bold;
+      margin: 5px 0 5px 0;
+  }
+  .card__item > p{
+      width: 90%;
+      font-size: 18px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: #000;
+      opacity: .7;
+  }
+  .start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #bold-start{
+      text-align: center;
+      font-size: 40px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: bolder;
+  }
+
+  .start > p{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 55%;
+      opacity: .7;
+      font-size: 20px;
+      margin: 2rem auto;
+  }
+  .main-flex-first{
+    margin-top: 5%;
+    display: flex;
+}
+.main-body-first{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-body-head-first{
+    font-size: 35px;
+    color: #182334;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+}
+.main-body-first > p{
+    font-size: 20px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: #182334;
+   width: 90%;
+   line-height: 30px;
+}
+.main-body-first > a > button{
+ width: 10rem;
+ height: 3rem;   
+ background-color: #4346DE;
+ color: #fff;
+ text-transform: uppercase;
+ font-weight: bold;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ cursor: pointer;
+ outline: none;
+ border: none;
+}
+.main-flex-first > .card{
+    width: 50%;
+    height: 60vh;
+    box-shadow: 24px 48px 88px rgb(24, 35, 52, 32%);
+    transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotateZ(7deg) scaleY(0.9) scaleX(0.95) translateX(-3%) translateY(-3%);
+    background-color: unset;
+}
+.main-flex-first > .card:hover{
+    transform: none;
+    transition: all .5s ease-in-out;
+}
+.main-flex-second{
+    display: flex;
+  }
+.main-flex-second > .card{
+    width: 50%;
+    height: 60vh;
+box-shadow: -24px 48px 88px rgb(24, 35, 52, 32%);
+transform: perspective(1000px) rotateY(13deg) rotateX(5deg) rotateZ(-7deg) scaleY(0.9) scaleX(0.95) translateX(3%) translateY(-3%);
+}
+.main-flex-second > .card:hover{
+    transform: none;
+    transition: all .5s ease-in-out;
+}
+.main-body-second{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-body-head-second{
+  font-size: 35px;
+  color: #182334;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 600;
+}
+.main-body-second > p{
+  font-size: 20px;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ color: #182334;
+ width: 90%;
+ line-height: 30px;
+}
+.main-body-second > a > button{
+width: 10rem;
+height: 3rem;   
+background-color: #4346DE;
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+cursor: pointer;
+outline: none;
+border: none;
+}
+.animate__fadeIn{
+    animation-duration: 3s;
+    transition: linear ease-in-out 1s;
+}
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.background {
+    position: absolute;
+    left: 0;   
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background: var(--indigo-background);
+    z-index: -1;
+    transition: all 250ms ease-in;
+  }
+  
+  .toggle--checkbox {
+    display: none;
+  }
+
+  .toggle--checkbox:checked ~ .background {
+    background: var(--indigo-background);
+  }
+  .toggle--checkbox:checked + .toggle--label {
+    background: var(--indigo-color);
+    border-color: var(--indigo-border);
+} 
+.toggle--checkbox:checked + .toggle--label:before {
+    background: var(--white);
+    border-color: var(--gray-border);
+    animation-name: switch;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+  }
+
+  .toggle--label {
+    width: 80px;
+    height: 40px;
+    background: var(--blue-color);
+    border-radius: 100px;
+    border: 5px solid var(--blue-border);
+    display: flex;
+    position: relative;
+    transition: all 350ms ease-in;
+  }
+  .toggle--label:before {
+    animation-name: reverse;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    transition: all 350ms ease-in;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 1px;
+    left: 4px;
+    position: absolute;
+    border-radius: 82px;
+    background: var(--white);
+  }
+  .toggle--label:after {
+    transition-delay: 0ms;
+    transition: all 250ms ease-in;
+    position: absolute;
+    content: "";
+    left: 100px;
+    top: 23px;
+    width: 5px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  @keyframes switch {
+    0% {
+      left: 1px;
+    }
+    60% {
+      left: 4px;
+      width: 12px;
+    }
+    100% {
+      left: 40px;
+      width: 30px;
+    }
+  }
+  @keyframes reverse {
+    0% {
+      left: 10px;
+    }
+    60% {
+      left: 50px;
+    }
+    100% {
+      left: 1px;
+    }
+  }
+  .check > span{
+    margin: 1rem;
+  }
+  .bills-container{
+    background-color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+  .first-card{
+    width: 33.4%;
+    margin-left: 1rem;
+    background-color: var(--white);
+    box-shadow: 24px 48px 88px rgb(24, 35, 52, 32%);
+    padding: 1.5rem;
+  }
+  .card-header{
+    border-bottom: 2px solid var(--gray-border);
+  }
+  .second-card-header{
+    border-bottom: 2px solid var(--gray-border);
+    display: flex;
+    position: relative;
+  }
+  .second-card-header > img{
+    width:2.5rem;
+    height:2.5rem;
+    position: absolute;
+    right: 0;
+  }
+  .second-card-header-block{
+    display: block;
+  }
+  .second-card-header-block > .month{
+    color: #768DB2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 8px 0;
+  }
+  .price{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .price > span{
+    font-style: italic;
+    font-weight: bolder;
+    color: #768DB2;
+    font-size: 2.5rem !important;
+  }
+  .card-header > .month{
+    color: #768DB2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 8px 0;
+  }
+  .included{
+    padding: 25px 0;
+    font-weight: bolder;
+    font-family: Helvetica;
+    border-bottom: 2px solid var(--gray-border);
+  }
+  .except-flex{
+    display: flex;
+    padding: 25px 0;
+    font-family: Helvetica;
+    border-bottom: 2px solid var(--gray-border);
+    color: #768DB2;
+    position: relative;
+  }
+  .except-flex > i{
+    position: absolute;
+    right: 0;
+    color: rgb(85, 211, 85);
+  }
+  .except-flex > .minus{
+    position: absolute;
+    right: 0;
+    border: 1px solid #768DB2;
+    width: 20px;
+  }
+  button{
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #4346DE;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
+  }
+ .second-button{
+    background-color: var(--blue-color);
+  }
+  .nisi-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+    border-top: 2px solid var(--gray-border);
+    border-bottom: 2px solid var(--gray-border);
+
+  }
+  .nisi-flex > a > button{
+    width: 10rem;
+    height: 3rem;   
+    background-color: #4346DE;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    }
+    .nisi{
+      font-size: 2rem;
+      font-weight: bolder;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    footer{
+      margin: 3rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #768DB2;
+    }
+    .extra-links{
+      padding-top: 2rem;
+    }
+    .extra-links > a{
+      text-decoration: none;
+      color: #768DB2;
+      margin-right: 1rem
+    }
+    .social-icons{
+      display: flex;
+      justify-content: space-around;
+    }
+    .social-icons > i{
+      font-size: 2rem;
+      color: #4346DE;
+    }
+.copy{
+  padding-top: 2rem;
+}
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+.header-flex{
+  display: none;
+}
+.main-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-body{
+  width: 100%;
+  height: auto;
+}
+.main-body > a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-body > a > button{
+width: 10rem;
+height: 3rem;   
+background-color: #4346DE;
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+cursor: pointer;
+outline: none;
+border: none;
+}
+.main-flex > .card{
+  width: 85%;
+  height: 50vh;
+  box-shadow: 24px 48px 88px rgb(24, 35, 52, 32%);
+  transform: perspective(1000px) rotateY(-13deg) rotateX(5deg) rotateZ(7deg) scaleY(0.9) scaleX(0.95) translateX(-3%) translateY(-3%);
+  background-color: unset;
+}
+/* .main-flex > .card:hover{
+  transform: none;
+  transition: all .5s ease-in-out;
+} */
+}
